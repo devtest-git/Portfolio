@@ -3,6 +3,46 @@
 export default function Projects() {
   const projects = [
     {
+      title: 'Multi-Cloud 3-Tier Architecture Deployment and Management',
+      description:
+        'Designed and deployed a 3-tier web application architecture across AWS, Azure, and GCP, integrating web, application, and database layers for scalability and high availability. Configured load balancers, auto-scaling, secure networking, and automated provisioning with Terraform. Implemented Jenkins CI/CD pipelines and native cloud monitoring with alerting.',
+      tags: ['AWS', 'Azure', 'GCP', 'Terraform', 'Jenkins', 'CI/CD'],
+      impact: 'Delivered highly available multi-cloud platform with automated deployments and improved operability',
+      icon: '☁️',
+    },
+    {
+      title: 'Hybrid Connectivity for Banking Workloads',
+      description:
+        'Designed and implemented secure hybrid connectivity using AWS Site-to-Site VPN and Direct Connect. Configured BGP routing for dynamic route propagation, redundant VPN tunnels for HA, and validated failover through DR drills.',
+      tags: ['AWS', 'VPN', 'Direct Connect', 'BGP', 'Networking'],
+      impact: 'Achieved secure, resilient hybrid connectivity with automated failover and DR readiness',
+      icon: '🔒',
+    },
+    {
+      title: 'Cross-Cloud BGP VPN (AWS ↔ Azure)',
+      description:
+        'Designed and deployed Site-to-Site VPN connectivity between AWS and Azure with BGP for dynamic routing and secure cross-cloud communication. Troubleshot routing and tunnel stability to ensure low-latency, reliable links.',
+      tags: ['AWS', 'Azure', 'BGP', 'VPN', 'Networking'],
+      impact: 'Enabled secure cross-cloud workload communication with stable BGP routing',
+      icon: '🔁',
+    },
+    {
+      title: 'Jenkins Automation for Multi-Account AWS Operations',
+      description:
+        'Centralized Jenkins automation for multi-account AWS management, using cross-account IAM role assumption. Built pipelines for EC2 inventory, EBS snapshot tracking, and IAM/SSO reporting with automated email summaries.',
+      tags: ['Jenkins', 'AWS', 'Automation', 'IAM', 'Reporting'],
+      impact: 'Improved operational visibility and reduced manual effort through centralized automation',
+      icon: '🧰',
+    },
+    {
+      title: 'OCI Environment with Azure Entra ID Federation',
+      description:
+        'Designed OCI compartments, VCNs, subnets, route tables, security lists, provisioned compute and Oracle DBaaS, and integrated Azure Entra ID for federated authentication and centralized identity management.',
+      tags: ['OCI', 'Azure Entra ID', 'Networking', 'Identity'],
+      impact: 'Deployed production-ready OCI tenancy with federated identity and compartmentalization',
+      icon: '🧭',
+    },
+    {
       title: 'Multi-Cloud Hybrid Network Setup',
       description: 'Designed and implemented a secure hybrid cloud network connecting on-premises data center with AWS and Azure environments using VPN and Direct Connect.',
       tags: ['AWS', 'Azure', 'Networking', 'Hybrid Cloud', 'VPN', 'BGP'],

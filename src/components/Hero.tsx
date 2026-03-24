@@ -5,8 +5,8 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
       <div className="max-w-4xl mx-auto text-center">
         {/* Badge */}
-        <div className="mb-6 inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/30 dark:border-blue-500/30 rounded-full animate-fade-in">
-          <p className="text-blue-600 dark:text-blue-400 text-sm font-medium">🚀 Cloud Engineer | DevOps Specialist</p>
+        <div className="mb-6 inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/30 dark:border-blue-500/30 rounded-full animate-fade-in group hover:bg-blue-600/90 dark:hover:bg-blue-400/90 transition-colors">
+          <p className="text-blue-600 dark:text-blue-400 text-sm font-medium group-hover:text-white dark:group-hover:text-black transition-colors">🚀 Cloud Specialist | DevOps Engineer</p>
         </div>
 
         {/* Main heading */}

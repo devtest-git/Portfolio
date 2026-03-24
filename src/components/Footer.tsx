@@ -47,7 +47,7 @@ export default function Footer() {
             <h4 className="text-slate-900 dark:text-white font-semibold mb-4 transition-colors duration-300">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com/sandeep-ravindran"
+                href="https://github.com/devtest-git"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-slate-300 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 flex items-center justify-center transition-colors text-slate-700 dark:text-slate-400 hover:text-white"
@@ -69,7 +69,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="mailto:sandeep.ravindran@example.com"
+                href="mailto:sandeep.ravindran.dev@gmail.com"
                 className="w-10 h-10 rounded-lg bg-slate-300 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 flex items-center justify-center transition-colors text-slate-700 dark:text-slate-400 hover:text-white"
                 aria-label="Email"
               >
