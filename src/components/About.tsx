@@ -96,24 +96,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
-        {/* Certifications highlight */}
-        <div className="mt-16 pt-12 border-t border-slate-300 dark:border-slate-700 transition-colors duration-300">
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Certifications</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { title: 'AWS Solutions Architect', icon: '☁️' },
-              { title: 'Azure Administrator', icon: '🔷' },
-              { title: 'GCP Professional', icon: '📊' },
-              { title: 'Kubernetes Certified', icon: '⚙️' },
-            ].map((cert) => (
-              <div key={cert.title} className="glass-effect p-4 text-center hover:shadow-lg hover:shadow-blue-500/20 transition-all animate-fade-in">
-                <p className="text-2xl mb-2">{cert.icon}</p>
-                <p className="text-slate-800 dark:text-slate-200 font-medium text-sm">{cert.title}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
