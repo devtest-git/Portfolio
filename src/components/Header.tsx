@@ -19,7 +19,7 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800 z-50 transition-colors duration-300">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold gradient-text">
-          Sandeep
+          Portfolio
         </Link>
 
         <div className="hidden md:flex gap-8 items-center">
