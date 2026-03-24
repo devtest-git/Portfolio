@@ -52,10 +52,10 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-slate-900 dark:text-white mb-1 transition-colors duration-300">Email</h4>
                     <a
-                      href="mailto:sandeep.ravindran@example.com"
+                      href="mailto:sandeep.ravindran.dev@gmail.com"
                       className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                     >
-                      sandeep.ravindran@example.com
+                      sandeep.ravindran.dev@gmail.com
                     </a>
                   </div>
                 </div>
@@ -84,12 +84,12 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-slate-900 dark:text-white mb-1 transition-colors duration-300">GitHub</h4>
                     <a
-                      href="https://github.com/sandeep-ravindran"
+                      href="https://github.com/devtest-git"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                     >
-                      github.com/sandeep-ravindran
+                      github.com/devtest-git
                     </a>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export default function Contact() {
             <div className="glass-effect p-6 border-l-4 border-green-500">
               <p className="text-green-700 dark:text-green-400 font-semibold mb-2 transition-colors duration-300">🎯 Currently Seeking:</p>
               <ul className="text-slate-700 dark:text-slate-300 space-y-1 text-sm transition-colors duration-300">
-                <li>• Internship positions (2026-2028)</li>
+                <li>• Internship positions (2026-2027)</li>
                 <li>• Cloud Engineer roles (Post-graduation)</li>
                 <li>• DevOps Engineer positions</li>
                 <li>• Enterprise Cloud Architecture roles</li>
