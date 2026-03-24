@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { ThemeProvider } from '@/context/ThemeContext';
 
 export const metadata: Metadata = {
   title: 'Sandeep - Cloud Engineer & DevOps Specialist',
@@ -13,9 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-slate-950 text-slate-100 antialiased">
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

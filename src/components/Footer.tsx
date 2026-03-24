@@ -4,38 +4,38 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-950 border-t border-slate-800 py-8 px-6">
+    <footer className="bg-slate-200 dark:bg-slate-950 border-t border-slate-300 dark:border-slate-800 py-8 px-6 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-slate-800">
+        <div className="grid md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-slate-300 dark:border-slate-800 transition-colors duration-300">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold gradient-text mb-3">Sandeep</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
+            <p className="text-slate-700 dark:text-slate-400 text-sm leading-relaxed transition-colors duration-300">
               Cloud Engineer | DevOps Specialist | Future MS Student at NCI Ireland
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <h4 className="text-slate-900 dark:text-white font-semibold mb-4 transition-colors duration-300">Quick Links</h4>
+            <ul className="space-y-2 text-sm text-slate-700 dark:text-slate-400 transition-colors duration-300">
               <li>
-                <a href="#home" className="hover:text-blue-400 transition-colors">
+                <a href="#home" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-blue-400 transition-colors">
+                <a href="#about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-blue-400 transition-colors">
+                <a href="#projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-blue-400 transition-colors">
+                <a href="#contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Contact
                 </a>
               </li>
@@ -44,13 +44,13 @@ export default function Footer() {
 
           {/* Social Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Connect</h4>
+            <h4 className="text-slate-900 dark:text-white font-semibold mb-4 transition-colors duration-300">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/sandeep-ravindran"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors text-slate-400 hover:text-white"
+                className="w-10 h-10 rounded-lg bg-slate-300 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 flex items-center justify-center transition-colors text-slate-700 dark:text-slate-400 hover:text-white"
                 aria-label="GitHub"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -58,10 +58,10 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/sandeep-ravindran-devops"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors text-slate-400 hover:text-white"
+                className="w-10 h-10 rounded-lg bg-slate-300 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 flex items-center justify-center transition-colors text-slate-700 dark:text-slate-400 hover:text-white"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -69,8 +69,8 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="mailto:your.email@example.com"
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors text-slate-400 hover:text-white"
+                href="mailto:sandeep.ravindran@example.com"
+                className="w-10 h-10 rounded-lg bg-slate-300 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 flex items-center justify-center transition-colors text-slate-700 dark:text-slate-400 hover:text-white"
                 aria-label="Email"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-slate-600 dark:text-slate-500 transition-colors duration-300">
           <p>© {currentYear} Sandeep. All rights reserved.</p>
           <p>Crafted with ❤️ for cloud enthusiasts in Ireland</p>
         </div>

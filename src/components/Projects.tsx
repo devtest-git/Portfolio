@@ -47,10 +47,10 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-slate-900/50">
+    <section id="projects" className="py-20 px-6 bg-slate-100/50 dark:bg-slate-900/50 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-4 text-center gradient-text">Featured Projects</h2>
-        <p className="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto transition-colors duration-300">
           Showcase of impactful cloud infrastructure and DevOps projects delivered in production environments
         </p>
 
@@ -66,16 +66,16 @@ export default function Projects() {
                 </span>
               </div>
 
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 {project.title}
               </h3>
 
-              <p className="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+              <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed mb-4 flex-grow transition-colors duration-300">
                 {project.description}
               </p>
 
               <div>
-                <p className="text-sm text-green-400 font-medium mb-3">
+                <p className="text-sm text-green-600 dark:text-green-400 font-medium mb-3 transition-colors duration-300">
                   ✓ {project.impact}
                 </p>
 
@@ -83,7 +83,7 @@ export default function Projects() {
                   {project.tags.map((tag, tagIdx) => (
                     <span
                       key={tagIdx}
-                      className="px-2 py-1 bg-slate-800/50 text-slate-300 rounded text-xs font-medium hover:bg-blue-600/30 hover:text-blue-300 transition-colors"
+                      className="px-2 py-1 bg-slate-300 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded text-xs font-medium hover:bg-blue-600/30 dark:hover:bg-blue-600/30 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                     >
                       {tag}
                     </span>
@@ -95,9 +95,9 @@ export default function Projects() {
         </div>
 
         {/* Call to action for more projects */}
-        <div className="mt-16 pt-12 text-center border-t border-slate-700">
-          <h3 className="text-2xl font-bold text-white mb-4">Interested in More Details?</h3>
-          <p className="text-slate-400 mb-6">
+        <div className="mt-16 pt-12 text-center border-t border-slate-300 dark:border-slate-700 transition-colors duration-300">
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Interested in More Details?</h3>
+          <p className="text-slate-600 dark:text-slate-400 mb-6 transition-colors duration-300">
             I'm actively seeking internship and cloud engineer positions in Ireland. Let's discuss how I can contribute to your team.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
