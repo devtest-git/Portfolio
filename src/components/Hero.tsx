@@ -8,7 +8,9 @@ export default function Hero() {
         <div className="mb-6 inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/30 dark:border-blue-500/30 rounded-full animate-fade-in group hover:bg-blue-600/90 dark:hover:bg-blue-400/90 transition-colors">
           <p className="text-blue-600 dark:text-blue-400 text-sm font-medium group-hover:text-white dark:group-hover:text-black transition-colors">🚀 Cloud Specialist | DevOps Engineer</p>
         </div>
-
+        <h4 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-slate-900 dark:text-white transition-colors duration-300 animate-fade-in">
+          Sandeep Ravindran
+        </h4>
         {/* Main heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-slate-900 dark:text-white transition-colors duration-300 animate-fade-in">
           Building Cloud <span className="gradient-text">Infrastructure</span> at Scale
