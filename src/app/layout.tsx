@@ -4,8 +4,8 @@ import { ThemeProvider } from '@/context/ThemeContext';
 
 export const metadata: Metadata = {
   title: 'Sandeep - Cloud Engineer & DevOps Specialist',
-  description: 'Portfolio showcasing cloud engineering expertise in AWS, Azure, GCP, and DevOps solutions. Currently pursuing MS in Cloud Computing at NCI Ireland.',
-  keywords: 'cloud engineer, devops, aws, azure, gcp, infrastructure, portfolio',
+  description:
+    'Portfolio showcasing cloud engineering expertise in AWS, Azure, GCP, and DevOps solutions.',
 };
 
 export default function RootLayout({
@@ -15,7 +15,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+      <head>
+        {/* Prevent theme flicker before React loads */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
+
+      <body className="bg-white dark:bg-slate-950 text-black dark:text-white transition-colors duration-300">
         <ThemeProvider>
           {children}
         </ThemeProvider>

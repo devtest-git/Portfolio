@@ -14,36 +14,32 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('dark');
 
+  // Apply theme on initial load
   useEffect(() => {
-    const stored = localStorage.getItem('theme') as Theme | null;
-    const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    const currentTheme = stored || preferred;
+    const storedTheme = localStorage.getItem('theme') as Theme | null;
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+
+    const currentTheme = storedTheme || systemTheme;
+
     setTheme(currentTheme);
 
-    // Apply theme to html element
-    const html = document.documentElement;
-    if (currentTheme === 'dark') {
-      html.classList.add('dark');
-    } else {
-      html.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle('dark', currentTheme === 'dark');
   }, []);
 
+  // Toggle theme
   const toggleTheme = () => {
     setTheme(prev => {
       const newTheme = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newTheme);
 
-      // Apply theme to html element
-      const html = document.documentElement;
-      if (newTheme === 'dark') {
-        html.classList.add('dark');
-      } else {
-        html.classList.remove('dark');
-      }
+      localStorage.setItem('theme', newTheme);
+      document.documentElement.classList.toggle('dark', newTheme === 'dark');
+
       return newTheme;
     });
   };
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
@@ -51,14 +47,16 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
+// Hook
 export function useTheme() {
   const context = useContext(ThemeContext);
-  if (context === undefined) {
-    // Return default values if context is not available (during SSR)
+
+  if (!context) {
     return {
       theme: 'dark' as Theme,
       toggleTheme: () => {},
     };
   }
+
   return context;
 }
