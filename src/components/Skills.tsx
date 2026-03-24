@@ -25,7 +25,7 @@ export default function Skills() {
     {
       title: 'Programming & Scripting',
       icon: '💻',
-      skills: ['Python', 'YAML', 'Bash'],
+      skills: ['Python', 'YAML', 'Bash Scripting'],
     },
     {
       title: 'Tools & Platforms',
