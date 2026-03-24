@@ -27,6 +27,7 @@ export default function Header() {
             { label: 'Home', href: '#home' },
             { label: 'About', href: '#about' },
             { label: 'Skills', href: '#skills' },
+            { label: 'Certifications', href: '#certifications' },
             { label: 'Projects', href: '#projects' },
             { label: 'Contact', href: '#contact' },
           ].map(({ label, href }) => (
@@ -92,6 +93,7 @@ export default function Header() {
               { label: 'Home', href: '#home' },
               { label: 'About', href: '#about' },
               { label: 'Skills', href: '#skills' },
+              { label: 'Certifications', href: '#certifications' },
               { label: 'Projects', href: '#projects' },
               { label: 'Contact', href: '#contact' },
             ].map(({ label, href }) => (

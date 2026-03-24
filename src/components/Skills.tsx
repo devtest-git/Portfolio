@@ -10,7 +10,7 @@ export default function Skills() {
     {
       title: 'Infrastructure & DevOps',
       icon: '⚙️',
-      skills: ['Terraform', 'Jenkins', 'Docker', 'Kubernetes', 'GitLab CI/CD', 'GitHub Actions'],
+      skills: ['Terraform', 'Jenkins', 'Docker', 'GitLab CI/CD', 'GitHub Actions'],
     },
     {
       title: 'Networking',
