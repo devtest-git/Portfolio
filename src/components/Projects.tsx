@@ -8,7 +8,7 @@ export default function Projects() {
       'Designed and implemented an automated tagging solution using AWS Lambda, Boto3, and EventBridge. Enforced tagging compliance across multiple AWS accounts using AWS Organizations policies. Developed automation logic to identify non-compliant resources and generate detailed reports, improving governance and cost tracking.',
     tags: ['AWS', 'Lambda', 'Boto3', 'EventBridge', 'Governance', 'Automation'],
     impact: 'Improved cost visibility and reduced manual auditing effort across multi-account environments',
-    icon: '🏷️',
+    icon: '🔖',
   },
   {
     title: 'Hybrid Connectivity using Site-to-Site VPN and Direct Connect',
@@ -32,7 +32,7 @@ export default function Projects() {
       'Designed and implemented a centralized Jenkins automation platform for managing multiple AWS accounts using cross-account IAM role assumption. Built pipelines for EC2 inventory, EBS snapshot tracking, and IAM/SSO reporting with automated email notifications.',
     tags: ['Jenkins', 'AWS', 'Automation', 'IAM', 'CI/CD'],
     impact: 'Reduced manual effort and improved operational visibility through centralized automation',
-    icon: '🧰',
+    icon: '👨🏻‍🔧',
   },
   {
     title: 'OCI Environment Setup with Azure Entra ID Federation',
@@ -40,7 +40,7 @@ export default function Projects() {
       'Designed and deployed OCI infrastructure from scratch with compartment-based architecture (Prod, Non-Prod, DMZ). Configured VCN, subnets, route tables, and security lists. Provisioned compute, load balancers, and Oracle DBaaS, and integrated Azure Entra ID for federated authentication.',
     tags: ['OCI', 'Azure Entra ID', 'Networking', 'Identity', 'Cloud'],
     impact: 'Delivered production-ready OCI environment with secure identity federation',
-    icon: '🧭',
+    icon: '🅾️',
   }
   ];
 
