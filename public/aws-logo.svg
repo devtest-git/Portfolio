@@ -1,20 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 144" width="240" height="144">
-  <!-- AWS Orange Background -->
+  <defs>
+    <linearGradient id="awsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9900;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF7300;stop-opacity:1" />
+    </linearGradient>
+  </defs>
   <rect width="240" height="144" fill="none"/>
-
-  <!-- AWS Logo -->
-  <g transform="translate(120, 72) scale(1)">
-    <!-- Main A -->
-    <path d="M -25 10 L -35 -10 L -15 -10 Z" fill="#FF9900"/>
-    <!-- Left bracket -->
-    <path d="M -45 0 L -40 0 L -40 20 L -45 20 Z" fill="#FF9900"/>
-    <!-- Right bracket -->
-    <path d="M -5 0 L 0 0 L 0 20 L -5 20 Z" fill="#FF9900"/>
-
-    <!-- Main W -->
-    <path d="M 5 -10 L 0 10 L 5 0 L 10 10 L 15 -10" fill="none" stroke="#FF9900" stroke-width="3" stroke-linecap="round"/>
-
-    <!-- Main S -->
-    <path d="M 25 -10 Q 20 -10 20 -5 Q 20 0 25 0 Q 30 0 30 5 Q 30 10 25 10" fill="none" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- AWS Arrow symbol -->
+  <g transform="translate(120, 72)">
+    <path d="M -30 -15 L 0 0 L -30 15 Z" fill="url(#awsGradient)" opacity="0.8"/>
+    <path d="M -15 -20 L 15 0 L -15 20 Z" fill="#FF9900"/>
+    <path d="M 15 -15 L 30 0 L 15 15 Z" fill="#FF6600"/>
   </g>
 </svg>

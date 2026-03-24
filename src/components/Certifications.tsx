@@ -3,24 +3,24 @@
 export default function Certifications() {
   const certifications = [
     {
-      name: 'AWS',
+      name: 'AWS Certified Cloud Security',
       logo: '/aws-logo.svg',
-      description: 'Amazon Web Services',
+      description: 'Speciality',
     },
     {
-      name: 'Google Cloud',
+      name: 'GCP Certified Associate',
       logo: '/gcp-logo.svg',
-      description: 'Google Cloud Platform',
+      description: 'Cloud Engineer',
     },
     {
-      name: 'Microsoft Azure',
+      name: 'Azure Administrator',
       logo: '/azure-logo.svg',
-      description: 'Microsoft Azure',
+      description: 'Associate',
     },
     {
-      name: 'Oracle Cloud',
+      name: 'OCI Certified Architect',
       logo: '/oci-logo.svg',
-      description: 'Oracle Cloud Infrastructure',
+      description: 'Associate',
     },
   ];
 
