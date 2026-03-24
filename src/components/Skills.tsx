@@ -10,7 +10,7 @@ export default function Skills() {
     {
       title: 'Infrastructure & DevOps',
       icon: '⚙️',
-      skills: ['Terraform', 'Jenkins', 'Docker', 'GitLab CI/CD', 'GitHub Actions'],
+      skills: ['Terraform', 'Jenkins', 'Docker', 'Kubernetes', 'GitLab CI/CD', 'GitHub Actions'],
     },
     {
       title: 'Networking',
@@ -20,7 +20,7 @@ export default function Skills() {
     {
       title: 'Security & Access',
       icon: '🔐',
-      skills: ['IAM Policies', 'RBAC', 'Encryption', 'SSL/TLS', 'Security Best Practices', 'Compliance'],
+      skills: ['IAM Policies', 'RBAC', 'Encryption', 'Security Best Practices', 'Compliance'],
     },
     {
       title: 'Programming & Scripting',
@@ -30,7 +30,7 @@ export default function Skills() {
     {
       title: 'Tools & Platforms',
       icon: '🛠️',
-      skills: ['Linux', 'Git', 'AWS CloudFormation', 'Azure DevOps', 'Monitoring & Logging', 'API Management'],
+      skills: ['Linux', 'Git', 'AWS CloudFormation', 'GitHub', 'Monitoring & Logging', 'Cost Management Tools'],
     },
   ];
 
