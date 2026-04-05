@@ -4,7 +4,7 @@ export default function Certifications() {
   const certifications = [
     {
       name: 'AWS Certified Cloud Security',
-      logo: '/aws-logo.svg',
+      logo: '/aws-scs.svg',
       description: 'Speciality',
     },
     {
