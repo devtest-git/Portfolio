@@ -8,14 +8,14 @@ export default function Certifications() {
       description: 'Speciality',
     },
     {
-      name: 'GCP Certified Associate',
-      logo: '/gcp-ace.png',
-      description: 'Cloud Engineer',
-    },
-    {
       name: 'Azure Administrator',
       logo: '/az-104.png',
       description: 'Associate',
+    },
+    {
+      name: 'GCP Certified Associate',
+      logo: '/gcp-ace.png',
+      description: 'Cloud Engineer',
     },
     {
       name: 'OCI Certified Architect',
@@ -25,10 +25,10 @@ export default function Certifications() {
   ];
 
   return (
-    <section id="certifications" className="py-20 px-6 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+    <section id="certifications" className="py-20 px-6 bg-slate-50 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-4 text-center gradient-text">Cloud Certifications & Platforms</h2>
-        <p className="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
           Experience with leading cloud providers and their certification paths
         </p>
 
