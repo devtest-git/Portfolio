@@ -38,7 +38,7 @@ export default function Certifications() {
               key={idx}
               className="glass-effect p-6 card-hover group flex flex-col items-center justify-center text-center"
             >
-                <div className="w-24 h-24 mb-4 flex items-center justify-center bg-slate-200 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-24 h-24 mb-4 flex items-center justify-center bg-slate-200 dark:bg-slate-450 rounded-lg group-hover:scale-110 transition-transform duration-300">
                 <img
                   src={cert.logo}
                   alt={cert.name}
