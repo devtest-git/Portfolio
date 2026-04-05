@@ -42,7 +42,7 @@ export default function Certifications() {
                 <img
                   src={cert.logo}
                   alt={cert.name}
-                  className="w-16 h-16 object-contain filter"
+                  className="w-20 h-20 object-contain filter"
                 />
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">{cert.name}</h3>
